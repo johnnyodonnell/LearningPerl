@@ -1,0 +1,25 @@
+#!/usr/bin/perl
+
+# From p.48
+# Setting a list equal to a new list copies the entire list
+
+@list = (1, 2, 3);
+@copy = @list;
+$copy[0] = 0;
+
+print ((join ",",  @list) . "\n");
+print ((join ",",  @copy) . "\n");
+
+
+# A list can be set equal to a scalar variable
+
+($another_list) = (1, 2, 3);
+print $another_list . "\n";
+print ((join ",",  $another_list) . "\n");
+print ((join ",",  @another_list) . "\n");
+
+$another_list = (1, 2, 3);
+print $another_list . "\n";
+print ((join ",",  $another_list) . "\n");
+print ((join ",",  @another_list) . "\n");
+
