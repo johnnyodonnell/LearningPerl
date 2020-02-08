@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+
+# From p. 33
+# If you need a left square bracket or a left curly brace just after
+# a scalar variable's name, precede it with a a backslash.
+
+$var = "variable";
+
+print "Value: $var\n";
+# print "Value: $var{\n"; # syntax error
+print "Value: $var\{\n";
+print "Value: {\n"; # syntax error
+
