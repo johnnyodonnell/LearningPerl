@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+
+# From p. 37
+# Perl doesn't have a separate Boolean datatype
+
+print ((4 < 10) . "\n");
+
