@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+# From p. 55
+
+@list = (20, 30, 40);
+$list = (20, 30, 40);
+
+print @list . "\n";
+print $list . "\n";
+
