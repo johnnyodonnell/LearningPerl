@@ -4,7 +4,19 @@
 
 @list = (20, 30, 40);
 $list = (20, 30, 40);
+$list_2 = @list;
 
+print "\@list: \n";
 print @list . "\n";
+print "@list\n";
+print "\n";
+
+print "\$list: \n";
 print $list . "\n";
+print "$list\n";
+print "\n";
+
+print "\$list_2: \n";
+print $list_2 . "\n";
+print "$list_2\n";
 

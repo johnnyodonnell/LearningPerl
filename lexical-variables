@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+# From p. 69
+
+
+sub print_nums {
+    my($num_1) = @_;
+    my $num_2 = @_;
+
+    print "$num_1\n";
+    print "$num_2\n";
+}
+
+print_nums 10, 20, 30;
+

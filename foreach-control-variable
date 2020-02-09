@@ -1,0 +1,21 @@
+#!/usr/bin/perl
+
+# From p. 70
+# """
+# In Chapter 3, you saw that you could define your own control variable
+# with the `foreach` structure. You can make that a lexical variable, too
+# """
+#
+# Why would you need to make a `foreach` control variable a lexical
+# variable?
+
+$var = "global";
+
+print "$var\n";
+
+foreach $var ( qw( local another_local ) ) {
+    print "$var\n";
+}
+
+print "$var\n";
+
