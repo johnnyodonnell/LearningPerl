@@ -23,3 +23,9 @@ print $another_list . "\n";
 print ((join ",",  $another_list) . "\n");
 print ((join ",",  @another_list) . "\n");
 
+
+# Interpolating arrays into strings
+# I should have used this technique to print the lists above
+
+print "@list\n";
+
