@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+# From p. 58
+# Use Ctrl-D to indicate EOF
+
+@lines = <STDIN>;
+
+print "\n\n--- Results ---\n\n";
+
+while ( ($index, $value) = each @lines) {
+    print $index + 1 . ": " . $value;
+}
+
+print "\n";
+
