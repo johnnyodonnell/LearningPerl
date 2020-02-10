@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+use v5.10; # Needed for using `state`
+
+# From p. 100
+
+
+sub get_count {
+    state $count = 0;
+    $count += 1;
+}
+
+print "Hi ${\get_count}\n";
+print STDOUT "Hi ${\get_count}\n";
+print (STDOUT "Hi ${\get_count}\n");
+print STDOUT ("Hi ${\get_count}\n");
+print (STDOUT ("Hi ${\get_count}\n"));
+
