@@ -1,0 +1,22 @@
+#!/usr/bin/perl
+
+# From p. 89
+# """
+# When there are no parentheses, `print` is a list operater, printing
+# all of the itmes in the following list;
+# ...
+# But when the first thing after `print` is a left parenthesis, `print`
+# is a function call, and it will print only what's found inside the
+# parentheses.
+# """
+#
+# This makes sense. The code below behaves as expected.
+#
+
+
+@list = qw( hi this is a list );
+
+print(@list);
+
+print "\n";
+
