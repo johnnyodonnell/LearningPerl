@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+
+# From p. 82
+# Very weird `while` and line-input operator shorcut
+
+print "Starting `while` loop input\n";
+while (<STDIN>) {
+    print $_;
+}
+
+print "Starting `for` loop input\n";
+for (<STDIN>) { # no difference between `for` and `foreach`
+    print $_;
+}
+
+#
+# # Results in a an infinite loop:
+# @list = qw( i am a test );
+# 
+# while (@list) {
+#     print $_;
+# }
+
