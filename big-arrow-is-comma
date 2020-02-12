@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+
+# From p. 113
+# """
+# in the Perl grammar, any time you need a comma (,), you can use the
+# big arrow instead
+# """
+#
+
+@list = (1 => 2 => 3 => 4);
+%hash = ("one", 1, "two", 2);
+
+print "List: \n";
+print "@list\n\n";
+
+print "Hash: \n";
+for (%hash) {
+    print "$_\n";
+}
+
