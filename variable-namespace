@@ -1,0 +1,22 @@
+#!/usr/bin/perl
+
+# From p. 110
+# """
+# The name of the hash is like any other Perl identifier. And it's from a
+# separate namespace
+# """
+
+$var = "scalar";
+@var = ("scalar_from_list", "another_scalar_from_list");
+%var = ( "key" => "scalar_from_hash" );
+
+sub var {
+    "scalar_from_subroutine";
+}
+
+print "$var\n";
+print "@var\n";
+print "$var[1]\n";
+print "$var{'key'}\n";
+print "${\var}\n";
+
