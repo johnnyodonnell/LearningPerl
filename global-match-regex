@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+
+# From p. 169
+#
+# For some reason I thought this would match "Rubble Fred". It however
+# does not.
+#
+
+my $text = "Barney Rubble Fred Flintstone Wilma Flintstone";
+my %map = ($text =~ /(\w+)\s+(\w+)/g);
+my @map = %map;
+
+print "@map\n";
+
