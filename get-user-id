@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+# From p. 239
+
+
+my $username = "johnny";
+my $user_id = getpwnam $username;
+
+print "user_id for $username: $user_id\n";
+

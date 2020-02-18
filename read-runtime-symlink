@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+
+# From p. 236
+
+
+foreach (qw( perl python ruby )) {
+    my $filename = "/usr/bin/" . $_;
+    my $runtime = readlink $filename;
+
+    if ($runtime) {
+        print "$_ links to $runtime\n";
+    } else {
+        print "$_ is not a link\n";
+    }
+}
+
