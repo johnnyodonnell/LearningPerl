@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+# From p. 287
+# Why does the `grep` filter use `$_` as its function argument?
+
+
+sub func {
+    print "@_\n";
+    print "$_\n";
+}
+
+func "hillo werld";
+
+grep { print "$_\n"; } 1, 2, 3;
+
