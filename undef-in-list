@@ -1,0 +1,29 @@
+#!/usr/bin/perl
+
+# From p. 282
+
+
+@list = (1, undef, 3);
+print "@list\n";
+
+@list = (1, (), 3);
+print "@list\n";
+
+@list = (1, (2, 2), 3);
+print "@list\n";
+
+@sublist;
+@list = (1, @sublist, 3);
+print "@list\n";
+
+@sublist = ();
+@list = (1, @sublist, 3);
+print "@list\n";
+
+@sublist = undef;
+@list = (1, @sublist, 3);
+print "@list\n";
+
+@list = (1, eval { 1 / 0 }, 3);
+print "@list\n";
+
